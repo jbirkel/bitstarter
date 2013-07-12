@@ -97,6 +97,7 @@ if(require.main == module) {
 		console.log("URL %s does not exist. Exiting.", instr);
 		process.exit(1);
 	    } else {
+		fs.writeFileSync(FS_TEMP_FILE,result);
 		var checkJson = checkHtmlFile(FS_TEMP_FILE, program.checks);
 		var outJson = JSON.stringify(checkJson, null, 4);
 		console.log(outJson);
