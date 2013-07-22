@@ -67,6 +67,12 @@
       body { 
          font-family: 'Open Sans', Helvetica, arial, sans-serif;
       }
+      .linediv-b {
+        border-bottom: 2px black solid;
+      }
+      .linediv-t {
+        border-top: 2px black solid;
+      }
       .heading, .subheading {
          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
          text-align: center;
@@ -97,6 +103,10 @@
       }
       .statistics h3, .statistics p {
         color: white;
+      }
+      .contest-rules {
+        background-color: #e0e0e0
+        padding: 5% 5%;
       }
        
       /* Marketing Copy and Footer */
@@ -136,7 +146,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">The Greatest Orator</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -167,7 +177,11 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Abraham Lincoln's masterpiece.<br>America's greatest political speech.</p>
+          <p class="lead">
+          Abraham Lincoln's masterpiece.<br>
+          America's most famous speech.<br>
+          <i>Your</i> chance to be <i><b>The Greatest Orator</b></i></p>
+          
         </div>
       </div>
       
@@ -190,12 +204,12 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                  <h3>1000</h3> <p>backers</p>
+                  <h3>5</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$100</h3> <p>of $1000</p>
                 </div>
               </div>
               <div class="span4">
@@ -205,14 +219,14 @@
               </div>
             </div>
           </div>        
-        
+
 <!-- 5 -->        
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 10%;"></div>
+              <div class="bar bar-warning" style="width: 90%;"></div>
             </div>
           </div>
           
@@ -220,7 +234,7 @@
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            <button class="btn btn-success btn-large">Support this contest</button>
           </div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
@@ -230,6 +244,23 @@
           </div>
         </div>
       </div>
+
+      
+      <div class="lead span10 offset1">
+      <div class="linediv-t"><br></div>
+      <div class="hero-unit">
+      Support this contest by donating above.  When the goal is reached we will open a one-week contest 
+      during which time people may submit audio files of their own oration of the Gettysburg Address.  
+      <br><br>
+      At the end of that week there will be a week of voting, during which supporters may vote for their favorites,
+      applying 1 'like' (or vote) for each dollar they donated.  The entrant with the most votes will then
+      be declared <b>The Greatest Orator</b> and receive a cash prize. Second and third place prizes will also be awarded. 
+      <br><br>
+      Good luck and I hope you  support this contest.  In the meantime, read and enjoy the words of the great orator:
+      </div>
+      <div class="linediv-t"> </div>
+      </div>
+    
       
 <!-- 7 -->
       <!-- Beyond this part the marketing copy begins. -->
@@ -237,24 +268,36 @@
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="span4 offset1 asset">
+          <!-- <img class="img-polaroid" src="http://placehold.it/480x300"> -->
+          <img class="img-polaroid" src="http://capitolbadgers.files.wordpress.com/2010/07/gettysburg.jpg">
         </div>
-        <div class="span5 copy">
+        <div class="span6 copy">
           <p>
-Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.  We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. 
+Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.  We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live.
           </p>
         </div>
       </div>
       
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
+        <div class="span6 offset1 copy copy-right">
           <p>
-But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
+ It is altogether fitting and proper that we should do this. But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced.
           </p>
         </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="span4 asset">
+          <img class="img-polaroid" src="http://www.old-picture.com/civil-war/pictures/Pennsylvania-Gettysburg-013.jpg">
+        </div>
+      </div>
+      
+      <div class="row-fluid section1">
+        <div class="span4 offset1 asset">
+          <img class="img-polaroid" src="https://sphotos-a.xx.fbcdn.net/hphotos-prn1/p480x480/935588_10151478518873107_1518641547_n.jpg">
+        </div>
+        <div class="span6 copy">
+          <p>
+ It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth. 
+          </p>
         </div>
       </div>
 
@@ -266,29 +309,72 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
           <div class="span10 offset1">
             <h3>FAQ</h3>
             <div class="accordion" id="accordion2">
+
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    Who was Abraham Lincoln?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question. <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln">Wiki</a>
+                    Abraham Lincoln was the 16th president of the United States and author and original orator 
+                    of the speech that came to be known as <i>The Gettysburg Address.</i>
+                    <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln">More here.</a>
                   </div>
                 </div>
               </div>
+
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    What are the prizes?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    First prize receives half of the contest goal. Second and third places, a fifth and a tenth
+                    respectively.  (The remaining tenth is reserved for site expenses.)<br><br>  For example, for a $1000 
+                    contest goal the prizes would be:
+                    <dl class="dl-horizontal">
+                      <dt>First Place:</dt><dd>$500</dd>
+                      <dt>Second Place:</dt><dd>$200</dd>
+                      <dt>Third Place:</dt><dd>$100</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseThree">
+                    What are the voting rules?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    In general, you may only vote in a contest if you contribute your support to the contest 
+                    before the support phase closes, and you may vote as many times as you contributed dollars
+                    to the contest.  You may apply all your votes to one entrant or distribute them in any way 
+                    you wish, with the exception being that you cannot vote for yourself.  For details, refer                    to the <a>Voting Rules</a> page.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFour">
+                    How do I record and upload audio files?
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Brief description of software tools and a link to the <a>Upload</a> page.
                   </div>
                 </div>
               </div>
@@ -301,11 +387,9 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <p>This work is licensed under the 
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0.</a>
+          </p>
         </div>
       </div>
     </div>
